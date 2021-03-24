@@ -1,0 +1,35 @@
+header {
+    background-color: var(--bg-color);
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.policy-content p {
+    text-align: center;
+}
+
+.nav-item {
+    border: 0;
+}
+
+@media (max-width: 576px) {
+    .nav-item {
+        padding: 0 !important;
+        margin: 0 !important;
+        transform: translateY(5px);
+    }
+    ul {
+        margin-left: auto !important;
+        position: relative;
+        right: -50px;
+    }
+    .content {
+        padding-top: 20vh;
+    }
+}

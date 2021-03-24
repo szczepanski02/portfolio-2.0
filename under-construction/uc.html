@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="strony, designer, programista, developer">
+    <meta name="description" content="Radosław Szczepański - Internetowe portfolio">
+    <meta name="author" content="Radosław Szczepański | RS WEB DEV">
+    <title>Strona główna</title>
+
+    <!-- CSS -->
+    <link href="../src/styles/core.css" rel="stylesheet" type="text/css" />
+    <link href="../src/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- JS IMMEDIATELY -->
+    <script src="../src/javascript/lang.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <!-- font-family: 'Poppins', sans-serif; * 300, 400, 600, 700 -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        /* preloader */
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('preloader').classList.add("fade-out");
+            }, 1000);
+            setTimeout(() => {
+                document.getElementById('preloader').style.display = "none";
+            }, 2000);
+        });
+    </script>
+    <div id="preloader"></div>
+    <style>
+        body {
+            background-color: var(--bg-color);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+        }
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5 my-auto">
+                <h1>Trwają prace...</h1>
+                <div class="blue-line"></div>
+                <p>Strona jest w trakcie przebudowy. W celu nawiązania kontaktu skorzystaj z facebook'a.</p>
+                <button class="calcBtn main-btn" data-bs-toggle="modal" data-bs-target="#calculatorModal">
+                    <a href="https://www.facebook.com/rszczepanski.web">
+                    <div class="circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </div>
+                    <p>Facebook</p>
+                </a>
+                </button>
+            </div>
+            <div class="col-md-6 my-auto">
+                <img src="uc.png" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../src/bootstrap/bootstrap.min.js " type="text/javascript"></script>
+
+</html>

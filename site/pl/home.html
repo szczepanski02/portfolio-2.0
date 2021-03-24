@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="strony, designer, programista, developer">
+    <meta name="description" content="Radosław Szczepański - Internetowe portfolio">
+    <meta name="author" content="Radosław Szczepański | RS WEB DEV">
+    <title>Strona główna</title>
+    <link rel="icon" href="../../src/assets/favicon.png" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link href="../../src/styles/core.css" rel="stylesheet" type="text/css" />
+    <link href="../../src/styles/home.css" rel="stylesheet" type="text/css" />
+    <link href="../../src/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../src/lib/loading-bar.min.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- JS IMMEDIATELY -->
+    <script src="../../src/javascript/lang.js" type="text/javascript"></script>
+    <script src="../../src/lib/loading-bar.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <!-- font-family: 'Poppins', sans-serif; * 300, 400, 600, 700 -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader"></div>
+
+    <!--              Header section              -->
+    <header>
+        <!--              Main navigation - core.css              -->
+        <nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../../src/assets/logo.svg" width="44px" alt="">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#webNavbar" aria-controls="webNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span> </span>
+                    <span> </span>
+                    <span> </span>
+              </button>
+                <div class="collapse navbar-collapse" id="webNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item first">
+                            <a class="nav-link scroll-to-services">Usługi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link calcBtn" data-bs-toggle="modal" data-bs-target="#calculatorModal">Cennik</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Projekty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-to-wcp">WCP <span class="mobile-display">- Website Control Panel</span></a>
+                        </li>
+                        <li class="nav-item lastd">
+                            <a class="nav-link contactBtnAction" data-bs-toggle="modal" data-bs-target="#contactModal">Kontakt</a>
+                        </li>
+                    </ul>
+                    <div class="nav-form">
+                        <input class="form-control me-2" id="sreachWord" type="sreach" placeholder="Szukaj" aria-label="Search">
+                        <button class="btn" type="submit" id="sreachBtn"><img src="../../src/assets/search.svg" width="24px" alt=""></button>
+                    </div>
+                    <div id="mobile-lang-changer">
+                        <button class="btn pl">PL</button>
+                        <span>/</span>
+                        <button class="btn en">EN</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--              Header content              -->
+        <div id="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="header-text col-md-6 my-auto">
+                        <p2>RS WEB DEV</p2>
+                        <h1>Twoja marka<br>w <span class="primary-color">sieci</span></h1>
+                        <div class="blue-line"></div>
+                        <p>Poznaj możliwości internetu i rozpocznij promocje swojej działalności.</p>
+                    </div>
+                    <div class="col-md-6 my-auto">
+                        <img src="../../src/assets/header.png" class="d-flex mx-auto" width="80%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--              Technologies section              -->
+    <section id="technologies">
+        <div class="container">
+            <p>Technologie</p>
+            <div class="row">
+                <div class="col-2">
+                    <div class="content-box">
+                        <img src="../../src/assets/technologies/html.svg" width="70px" alt="">
+                        <p2>HTML 5</p2>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="content-box">
+                        <img src="../../src/assets/technologies/js.svg" width="70px" alt="">
+                        <p2>JSCRIPT</p2>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="content-box">
+                        <img src="../../src/assets/technologies/py.svg" width="70px" alt="">
+                        <p2>PYTHON</p2>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="content-box">
+                        <img src="../../src/assets/technologies/angular.svg" width="70px" alt="">
+                        <p2>ANGULAR</p2>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="content-box">
+                        <img src="../../src/assets/technologies/react.svg" width="70px" alt="">
+                        <p2>REACT</p2>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="content-box">
+                        <img src="../../src/assets/technologies/dj.png" width="70px" alt="">
+                        <p2>DJANGO</p2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--              About me section              -->
+    <section id="about-me">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 my-auto">
+                    <img src="../../src/assets/me.png" class="d-flex mx-auto" width="50%" alt="">
+                </div>
+                <div class="col-md-8 my-auto">
+                    <h2>Kim jestem?</h2>
+                    <div class="blue-line"></div>
+                    <p>Mam na imię się Radek. Od dłuższego czasu zajmuje się technicznymi i wizualnymi realizacjami stron oraz aplikacji internetowych. Moim narzędziem jest kod i wyobraźnia, a wizytówką satysfakcja klienta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--              My advantages desktop version section              -->
+    <section id="advantages-me" class="advantages-me">
+        <div class="container">
+            <h2>Co mnie charakteryzuję?</h2>
+            <div class="row justify-content-center">
+                <div class="card col-md-3">
+                    <img src="../../src/assets/advantages-me/time.svg" alt="">
+                    <div class="content-card">
+                        <h3>Czas wykonania</h3>
+                        <div class="blue-line"></div>
+                        <p>Zlecenia wykonuje zgodnie ze wspólnie ustalonym terminem</p>
+                    </div>
+                </div>
+                <div class="card col-md-3">
+                    <img src="../../src/assets/advantages-me/support.svg" alt="">
+                    <div class="content-card">
+                        <h3>Wsparcie techniczne</h3>
+                        <div class="blue-line"></div>
+                        <p>Udzielam wsparcia w trakcie realizacji projektu, jak i po jego zakończeniu</p>
+                    </div>
+                </div>
+                <div class="card col-md-3">
+                    <img src="../../src/assets/advantages-me/quality.svg" alt="">
+                    <div class="content-card">
+                        <h3>Jakość kodu</h3>
+                        <div class="blue-line"></div>
+                        <p>Tworzę czysty i przejrzysty kod, który zapewnia optymalne działanie witryny</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--              My advantages mobile version section              -->
+    <section id="advantages-me-slider" class="advantages-me">
+        <h2>Co mnie charakteryzuję?</h2>
+        <div id="carousel-web" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-web" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-web" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-web" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <img src="../../src/assets/advantages-me/time.svg" alt="">
+                        <div class="content-card">
+                            <h3>Czas wykonania</h3>
+                            <div class="blue-line"></div>
+                            <p>Zlecenia wykonuje zgodnie ze wspólnie ustalonym terminem</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="../../src/assets/advantages-me/support.svg" alt="">
+                        <div class="content-card">
+                            <h3>Wsparcie techniczne</h3>
+                            <div class="blue-line"></div>
+                            <p>Udzielam wsparcia w trakcie realizacji projektu, jak i po jego zakończeniu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="../../src/assets/advantages-me/quality.svg" alt="">
+                        <div class="content-card">
+                            <h3>Jakość kodu</h3>
+                            <div class="blue-line"></div>
+                            <p>Tworzę czysty i przejrzysty kod, który zapewnia optymalne działanie witryny</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--              Website advantages section              -->
+    <section id="advantages-web">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <h2>Jakie są <span class="primary-color">zalety</span> własnej strony internetowej?</h2>
+                    <div class="advantages-el"><img src="../../src/assets/checked.svg" width="42px" alt=""><span class="advantages-li">Łatwy dostęp do informacji dla Twoich klientów</span></div>
+                    <div class="advantages-el"><img src="../../src/assets/checked.svg" width="42px" alt=""><span class="advantages-li">Kreowanie wizerunku marki w internecie</span></div>
+                    <div class="advantages-el"><img src="../../src/assets/checked.svg" width="42px" alt=""><span class="advantages-li">Lepszy kontakt z klientem</span></div>
+                    <div class="advantages-el"><img src="../../src/assets/checked.svg" width="42px" alt=""><span class="advantages-li">Nowoczesny kanał sprzedaży</span></div>
+                </div>
+                <div class="content-box col-lg-5 my-auto">
+                    <h3>Zapytaj mnie, jak mogę Ci pomóc</h3>
+                    <div class="blue-line"></div>
+                    <p>Z chęcią, szczegółowo przedstawię Ci korzyści, które niosą ze sobą poszczególne usługi. W celu nawiązania <span class="primary-color">kontaktu</span> skorzystaj z przycisku zamieszczonego poniżej.</p>
+                    <button class="main-btn contactBtnAction" data-bs-toggle="modal" data-bs-target="#contactModal">
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </div>
+                        <p>Skontaktuj się</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--              Website advantages section              -->
+    <section id="about-web">
+        <div class="container">
+            <p2 class="pre-header">WYGLĄD, OPTYMALIZACJA I MARKETING</p2>
+            <h2><span class="primary-color">UI/UX</span> czyli definicja sukcesu w sieci</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 left-side my-auto">
+                    <p2>Czym jest User Experience?</p2>
+                    <div class="small-blue-line"></div>
+                    <p><span class="primary-color">UX</span> jest jednym z ważniejszych elementów podczas tworzenia stron internetowych. Jak sama nazwa wskazuje, jest to nic innego, jak doświadczenia użytkownika po skorzystaniu z danej witryny.</p>
+                    <p2>Czym jest User Interface?</p2>
+                    <div class="small-blue-line"></div>
+                    <p><span class="primary-color">UI</span> to proces polegający na właściwym zaprojektowaniu wyglądu strony internetowej, tak aby była dostosowana pod danego odbiorcę witryny.</p>
+                </div>
+
+                <div class="col-md-6 right-side my-auto">
+                    <h3>Siła <span class="primary-color">wyszukiwarki</span> internetowej</h3>
+                    <div class="small-blue-line"></div>
+                    <p>Jednym z atutów własnej witryny jest możliwość pozyskania nowych klientów, jednak aby użytkownicy mogli się o Tobie dowiedzieć, muszą mieć możliwość łatwego odnalezienia Twojej działalność w wyszukiwarce internetowej. Odpowiedni UI/UX
+                        zwiększa szanse na to, że Twoja strona będzie zajmowała wysoką pozycję w przeglądarce. Oprócz User Interface oraz User Experience istotny wpływ ma również optymalizacja strony, dbanie o jej odpowiednią treść oraz linki. Elementy
+                        te składają się na proces pozycjonowania - <span class="primary-color">SEO</span>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--              Services desktop version section              -->
+    <section id="services-desktop" class="services">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 my-auto">
+                    <h2>Jakie <span class="primary-color">usługi</span> mogę Ci zaoferować?</h2>
+                    <div class="blue-line"></div>
+                    <p>Moja działalność opiera się na tworzeniu, wizualizacji i optymalizacji witryn oraz aplikacji internetowych. Ceny projektów uzależnione są od zakresu oraz zaawansowania zlecenia. Możesz skorzystać z kalkulatora zamieszczonego poniżej,
+                        w celu oszacowania kosztów za daną usługę.</p>
+                    <button class="calcBtn main-btn" data-bs-toggle="modal" data-bs-target="#calculatorModal">
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </div>
+                        <p>Kalkulator kosztów</p>
+                    </button>
+                </div>
+                <div class="col-md-6 my-auto right-side">
+                    <img src="../../src/assets/macbook-mockup.png" width="80%" alt="">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="left-side-cards col-lg-3 col-md-6">
+                    <div class="services-card">
+                        <span class="services-card-number">1</span>
+                        <div class="services-card-body">
+                            <h3>Stworzenie strony</h3>
+                            <div class="small-blue-line"></div>
+                            <p>Utworzenie strony internetowej, dostosowanej pod klienta z ewentualną implementacją gotowego projektu graficznego</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-side-cards col-lg-3 col-md-6">
+                    <div class="services-card">
+                        <span class="services-card-number">2</span>
+                        <div class="services-card-body">
+                            <h3>Projekt graficzny</h3>
+                            <div class="small-blue-line"></div>
+                            <p>Opracowanie wyglądu strony internetowej lub grafiki komercyjnej z uwzględnieniem preferencji klienta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-side-cards col-lg-3 col-md-6">
+                    <div class="services-card">
+                        <span class="services-card-number">3</span>
+                        <div class="services-card-body">
+                            <h3>Naprawa i SEO</h3>
+                            <div class="small-blue-line"></div>
+                            <p>Naprawa elementów istniejącej strony internetowej, optymalizacja kodu i przeprowadzenie podstawowych czynności SEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-side-cards col-lg-3 col-md-6">
+                    <div class="services-card">
+                        <span class="services-card-number">4</span>
+                        <div class="services-card-body">
+                            <h3>Aplikacje i sekcje</h3>
+                            <div class="small-blue-line"></div>
+                            <p>Wdrożenie nowych aplikacji lub sekcji na Twojej stronie internetowej w celu poprawy jej funkcjonalności oraz wyglądu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services mobile version section -->
+    <section id="services-mobile" class="services">
+        <div class="container">
+            <h2>Jakie <span class="primary-color">usługi</span> mogę Ci zaoferować?</h2>
+        </div>
+        <div id="carousel-services" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-services" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-services" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-services" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel-services" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="services-card">
+                        <span class="services-card-number">1</span>
+                        <div class="services-card-body">
+                            <h3>Stworzenie strony</h3>
+                            <div class="small-blue-line"></div>
+                            <p>Utworzenie strony internetowej, dostosowanej pod klienta z ewentualną implementacją gotowego projektu graficznego</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="services-card">
+                        <span class="services-card-number">2</span>
+                        <div class="services-card-body">
+                            <h3>Projekt graficzny</h3>
+                            <div class="small-blue-line"></div>
+                            <p>Opracowanie wyglądu strony internetowej lub grafiki komercyjnej z uwzględnieniem preferencji klienta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="services-card">
+                        <span class="services-card-number">3</span>
+                        <div class="services-card-body">
+                            <h3>Naprawa i SEO</h3>
+                            <div class="small-blue-line"></div>
+                            <p>Naprawa elementów istniejącej strony internetowej, optymalizacja kodu i przeprowadzenie podstawowych czynności SEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="services-card">
+                        <span class="services-card-number">4</span>
+                        <div class="services-card-body">
+                            <h3>Aplikacje i sekcje</h3>
+                            <div class="small-blue-line"></div>
+                            <p>Wdrożenie nowych aplikacji lub sekcji na Twojej stronie internetowej w celu poprawy jej funkcjonalności oraz wyglądu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="calculator-mobile">
+                <p>Sprawdź cennik konkretnych usług, korzystając z przycisku zamieszczonego poniżej</p>
+                <button class="calcBtn main-btn" data-bs-toggle="modal" data-bs-target="#calculatorModal">
+                    <div class="circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </div>
+                    <p>Kalkulator kosztów</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--              ABOUT SINGLEPAGE section              -->
+
+    <section id="about_singlepage">
+        <div class="container">
+            <div class="col-md-10">
+                <p2>TECHNOLOGIE INTERNETOWE</p2>
+                <h2>Czym jest <span class="primary-color">SPA</span>?</h2>
+                <div class="blue-line"></div>
+                <p>SPA - Single Page Application jest to nowoczesna forma budowy strony internetowej. Polega na tworzeniu dynamicznej zawartości. Witryna internetowa nie posiada osobnych podstron, wszelkie akcje związane z prezentacją treści wykonują się
+                    na jednej stronie, bez przeładowania. Metoda ta zyskała na popularności ze względu na wysoki <span class="primary-color">UX</span> (User Experience).</p>
+            </div>
+        </div>
+    </section>
+
+    <!--              WCP section              -->
+    <section id="WCP">
+        <div class="container wcp">
+            <div class="row justify-content-center">
+                <div class="col-md-6 my-auto left-side">
+                    <p2>MIKROSERWIS</p2>
+                    <h2>WCP - Website <span class="primary-color">Control</span> Panel</h2>
+                    <div class="blue-line"></div>
+                    <p>Jedną z istotniejszych kwestii dla każdego właściciela portalu internetowego jest monitorowanie zachowań jego klientów. Panel analizuje ilość odsłon oraz bada tendencje do wykonywania danych czynności. Dodatkowym atutem jest możliwość
+                        wprowadzenia prostego i wygodnego w obsłudze czatu w celu nawiązania komunikacji z klientem.</p>
+                </div>
+
+                <div class="col-md-6 my-auto right-side">
+                    <h3>W jaki sposób mogę skorzystać z <span class="primary-color">WCP</span>?</h3>
+                    <p>Na ten moment usługa jest w trakcie trwania <span class="primary-color">poprawek.</span> Jeśli jesteś zainteresowany funkcjonalnością serwisu, przejdź na stronę przy użyciu przycisku zamieszczonego poniżej i śledź postępy w pracach
+                        nad aplikacją.</p>
+                    <button class="main-btn">
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </div>
+                        <p>Odwiedź stronę</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--              Facebook section              -->
+    <section id="facebook">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 left-side my-auto right-side">
+                    <img src="../../src/assets/socialmedia.png" width="80%" alt="">
+                </div>
+                <div class="col-lg-6 right-side my-auto">
+                    <h2>Moja działalność na <span class="primary-color">facebook</span></h2>
+                    <p>Dlaczego warto mnie obserwować na social mediach?</p>
+                    <div class="blue-line"></div>
+                    <p class="line-height">
+                        <span class="dot">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dot primary-color" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                        </span> Poznasz system działania stron internetowych
+                    </p>
+                    <p class="line-height">
+                        <span class="dot">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dot primary-color" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                        </span> Zobaczysz zaplecze projektowania witryn
+                    </p>
+                    <p class="line-height">
+                        <span class="dot">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dot primary-color" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                        </span> Możliwość uczestniczenia w konkursach i promocjach
+                    </p>
+                    <p class="pt-4">Możesz śledzić moje poczynania i korzystać z promocji na usługi związane z projektowaniem i tworzeniem stron internetowych. Jeśli jesteś zainteresowany to zapraszam Cię do kliknięcia w przycisk zamieszczony poniżej.</p>
+                    <button id="facebookBtn" class="main-btn">
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </div>
+                        <p>Przejdź do facebook'a</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--              Contact section              -->
+    <section id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 left-side my-auto">
+                    <h2>Wybierz opcję <span class="primary-color">kontaktu</span></h2>
+                    <div class="blue-line"></div>
+                    <p>Najszybszą formą kontaktu jest napisanie wiadomości przez <a class="primary-color" href="https://www.facebook.com/rszczepanski.web" target="__blank">facebook’a</a>. Istnieje również możliwość zamówienia rozmowy.</p>
+                    <p class="line-height">
+                        <span class="dot">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" fill="currentColor" class="bi bi-dot primary-color" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                        </span>Skorzystaj z przycisku zamieszczonego poniżej, aby wybrać opcje kontaktu telefonicznego.
+                    </p>
+                    <button class="main-btn" data-bs-toggle="modal" data-bs-target="#callModal">
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </div>
+                        <p>Kontakt telefoniczny</p>
+                    </button>
+                </div>
+                <div class="col-md-6 right-side my-auto">
+                    <div class="center">
+                        <h3>Formularz kontaktowy</h3>
+                        <div id="send_form_status"></div>
+                        <form method="post" action="/send_form.php" id="contact_form">
+                            <div><label for="name">Imię i nazwisko</label></div>
+                            <div><input type="text" name="name" id="name" class="formField" /></div>
+                            <div><label for="email">Adres email</label></div>
+                            <div><input type="text" name="email" id="email" class="formField" /></div>
+                            <div><label for="message">Treść wiadomości</label></div>
+                            <div><textarea name="message" id="message" class="textArea formField"></textarea></div>
+                            <p2>Wysyłając formularz, zatwierdzasz <a href="policy.html" target="_blank" class="policy">politykę prywatności.</a></p2>
+                            <br />
+                            <button class="main-btn" id="sendForm">
+                            <div class="circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                </svg>
+                            </div>
+                            <p>Wyślij wiadomość</p>
+                        </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--              FooterNav section - core.css              -->
+    <section id="footerNav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 column">
+                    <div class="center">
+                        <p2>ODNOŚNIKI GŁÓWNE</p2>
+                        <div class="small-blue-line"></div>
+                        <ul class="footer-ul">
+                            <li class="footer-li">
+                                <a href="#">Strona główna</a>
+                            </li>
+                            <li class="footer-li">
+                                <a class="scroll-to-services">Usługi</a>
+                            </li>
+                            <li class="footer-li">
+                                <a class="calcBtn" data-bs-toggle="modal" data-bs-target="#calculatorModal">
+                                    Kalkulator kosztów
+                                </a>
+                            </li>
+                            <li class="footer-li">
+                                <a class="disabled">Projekty</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 column">
+                    <div class="center">
+                        <p2>MIKROSERWISY</p2>
+                        <div class="small-blue-line"></div>
+                        <ul class="footer-ul">
+                            <li class="footer-li">
+                                <a class="disabled">WCP - Website Control Panel</a>
+                            </li>
+                            <li class="footer-li">
+                                <a class="disabled">CAT - Chat Advanced Tool</a>
+                            </li>
+                        </ul>
+                        <p2>POLITYKA PRYWATNOŚCI</p2>
+                        <div class="small-blue-line"></div>
+                        <a href="policy.html" href="policy.html" target="_blank" class="policy">privacy policy</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 right-side column">
+                    <div class="center">
+                        <p2>KONTAKT</p2>
+                        <div class="small-blue-line"></div>
+                        <div class="svg-text">
+                            <a href="#contact">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-envelope primary-color" viewBox="0 0 16 16 ">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1
+                                    1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z "/>
+                                </svg>
+                                <span class="span-text">kontakt mailowy</span>
+                            </a>
+                        </div>
+
+                        <div class="svg-text">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#callModal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-telephone-inbound primary-color" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                                <span class="span-text">kontakt telefoniczny</span>
+                            </a>
+                        </div>
+
+                        <div class="svg-text">
+                            <a href="https://www.facebook.com/rszczepanski.web" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-facebook primary-color" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                                <span class="span-text">kontakt facebook</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--              FooterNav section - core.css              -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <p>&#169; <a href="#" class="primary-color">rszczepanski.pl</a> - Radosław Szczepański</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--              Lang changer circle on bottom website for desktop - core.css              -->
+    <div id="lang-changer">
+        <button id="lang-btn" data-bs-toggle="modal" data-bs-target="#langModal">
+            <div class="lang-circle">
+                <p>PL</p>
+            </div>
+        </button>
+    </div>
+
+    <div class="modal fade" id="langModal" tabindex="-1" aria-labelledby="langModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p>Website language changer</p>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x text-white" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="circle-bg">
+                        <img src="../../src/assets/modal/lang.svg" width="42px" alt="">
+                    </div>
+                    <h5 class="modal-title">Choose your language</h5>
+                    <div class="button-group">
+                        <button class="btn-lang pl">PL</button>
+                        <button class="btn-lang en">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--              call modal - core.css              -->
+    <div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p>Kontakt telefoniczny</p>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x text-white" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="../../src/assets/modal/call.svg" width="42px" alt="">
+                    <h5 class="modal-title">Podaj swój numer telefonu</h5>
+                    <input type="tel" maxlength="9" placeholder="Podaj numer telefonu">
+                    <button class="btn" type="submit"><img src="../../src/assets/modal/ok.svg" width="24px" alt=""></button>
+                    <div style="clear:both" class="pt-3"></div>
+                    <p2>Podając numer telefonu, wyrażasz zgodę na przetwarzanie twoich danych osobowych. Więcej informacji w <a href='policy.html' target="_blank" class="policy">polityka prywatności</a></p2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--              contact modal - core.css              -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p>Kontakt</p>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x text-white" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <h5>Wybierz opcje kontaktu</h5>
+                    <div id="choose-contact-type">
+                        <div class="button-group">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <button id="mail-contact" class="contact-type">
+                                        <img src="../../src/assets/modal/contact/mail.svg" alt="">
+                                        <span>Kontakt<br /> mailowy</span>
+                                    </button>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <button id="phone-contact" class="contact-type" data-bs-toggle="modal" data-bs-target="#callModal">
+                                        <img src="../../src/assets/modal/contact/phone.svg" alt="">
+                                        <span>Kontakt<br /> telefoniczny</span>
+                                    </button>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <button id="fb-contact" class="contact-type">
+                                        <img src="../../src/assets/modal/contact/fb.svg" alt="">
+                                        <span>Kontakt<br /> facebook</span>
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-contact-form">
+                        <form method="post" action="/send_form.php" id="modal_contact_form">
+                            <div><label for="name">Imię i nazwisko</label></div>
+                            <div><input type="text" name="name" id="modalFormName" class="formField" /></div>
+                            <div><label for="email">Adres email</label></div>
+                            <div><input type="text" name="email" id="modalFormEmail" class="formField" /></div>
+                            <div><label for="message">Treść wiadomości</label></div>
+                            <div><textarea name="message" id="modalFormMessage" class="textArea formField"></textarea></div>
+                            <p2>Wysyłając formularz, zatwierdzasz <a href="policy.html" target="_blank" class="policy">politykę prywatności.</a></p2>
+                            <br />
+                            <button class="main-btn" id="modalSendForm">
+                            <div class="circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                </svg>
+                            </div>
+                            <p>Wyślij wiadomość</p>
+                        </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--              calculator modal - core.css              -->
+    <div class="modal fade" id="calculatorModal" tabindex="-1" aria-labelledby="calculatorModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p>Kalkulator kosztów</p>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x text-white" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7 left-side">
+                                <h5></h5>
+                                <div class="blue-line"></div>
+                                <div id="end-box">
+                                    <p class="pb-4">Proces kalkulacji został zakończony. Pamiętaj, że jest to tylko szacowana kwota za twoją usługę. W celu ustalenia ostatecznej ceny, skontaktuj się ze mną.</p>
+                                    <p2 class='userSetup-head'>Usługa, którą wybrałeś to: </p2>
+                                    <p id="userSetup"></p>
+                                    <div class="extra-options-box">
+                                        <p2 class="userSetUp-head">Dodatkowe opcje: </p2>
+                                        <br />
+                                        <span class="extra-option"></span>
+                                        <span class="extra-option"></span>
+                                        <span class="extra-option"></span>
+                                        <span class="extra-option"></span>
+                                    </div>
+                                    <button id="calcContactBtn" class="main-btn contactBtnAction" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                        <div class="circle">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                            </svg>
+                                        </div>
+                                        <p>Kontakt</p>
+                                    </button>
+                                </div>
+
+                                <div class="button-group my-auto">
+                                    <button id="dev" class="btn"></button>
+                                    <button id="seo" class="btn"></button>
+                                    <button id="design" class="btn"></button>
+                                </div>
+
+                                <div class="checkbox-group">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="checkbox-text">Graficzny projekt strony internetowej</span>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="checkbox-text">WordPress CMS</span>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="checkbox-text">Statystyki strony</span>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="checkbox-text">Wbudowany czat na stronie</span>
+                                    </div>
+                                </div>
+
+                                <button id="calcEndBtn" class="main-btn">
+                                    <div class="circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                        </svg>
+                                    </div>
+                                    <p>Zakończ</p>
+                                </button>
+                            </div>
+                            <div class="col-lg-5 right-side my-auto">
+                                <img src="../../src/assets/modal/calculator/services.jpg" class="calc-img" width="100%" alt="">
+                                <div class="bar">
+                                    <div class="priceBar label-center" id=data-value="0" data-max="4500" data-preset="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../../src/javascript/core.js" type="text/javascript"></script>
+<script src="../../src/bootstrap/bootstrap.min.js " type="text/javascript"></script>
+<script src="../../src/javascript/calculator.js" type="text/javascript"></script>
+
+</html>

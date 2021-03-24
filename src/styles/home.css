@@ -1,0 +1,649 @@
+/* HEADER */
+
+header {
+    background-color: var(--bg-color);
+}
+
+header .row {
+    justify-content: center;
+}
+
+#header-content {
+    padding-top: 14vh;
+}
+
+#header-content p2 {
+    color: white;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+#header-content .header-text {
+    width: 600px;
+}
+
+
+/* TECHNOLOGIES */
+
+#technologies {
+    background-color: var(--bg-color);
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#technologies img {
+    opacity: 0.6;
+    margin-right: 10px;
+}
+
+#technologies .content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#technologies p {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#technologies p2 {
+    color: white;
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+
+/* ABOUT ME */
+
+#about-me {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--bg-color-d);
+}
+
+
+/* MY ADVANTAGES DESKTOP */
+
+#advantages-me {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    background-color: var(--bg-color-d);
+}
+
+.advantages-me h2 {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.advantages-me .card {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid #0084ff73;
+    border-radius: 10px;
+    background-color: transparent;
+    -webkit-box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.96);
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.96);
+}
+
+.advantages-me .card img {
+    width: 86px;
+    background-color: var(--bg-color-d);
+    position: relative;
+    top: -50px;
+    margin-left: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.advantages-me .content-card {
+    position: relative;
+    top: -30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content-card h3 {
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* MY ADVANTAGES MOBILE */
+
+#advantages-me-slider {
+    padding-top: 30px;
+    background-color: var(--bg-color-d);
+    padding-bottom: 30px;
+}
+
+#advantages-me-slider .carousel-inner {
+    padding-top: 50px;
+}
+
+#advantages-me-slider .carousel {
+    position: relative;
+    top: -80px;
+}
+
+#advantages-me-slider .card {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-55%);
+    height: 250px;
+}
+
+.carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: transparent !important;
+    border: 3px solid var(--primary-color);
+}
+
+.carousel .carousel-indicators {
+    position: relative;
+    bottom: -350px;
+}
+
+#advantages-me-slider {
+    display: none;
+}
+
+
+/* WEB ADVANTAGES */
+
+#advantages-web {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--bg-color);
+    background-attachment: fixed;
+}
+
+#advantages-web h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#advantages-web h3 {
+    font-size: 36px;
+    color: white;
+    font-weight: 600;
+}
+
+#advantages-web .advantages-li {
+    color: white;
+    font-size: 22px;
+    margin-left: 20px;
+    position: relative;
+    top: 4px;
+}
+
+#advantages-web .advantages-el {
+    margin-bottom: 30px;
+    display: block;
+}
+
+
+/* ABOUT-WEB */
+
+#about-web {
+    background-color: var(--bg-color-d);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#about-web h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#about-web .left-side {
+    padding-right: 30px;
+}
+
+#about-web .left-side p2 {
+    color: white;
+    display: block;
+    margin-top: 60px;
+    font-size: 28px;
+}
+
+#about-web .right-side {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 30px;
+}
+
+#about-web .right-side h3 {
+    font-size: 36px;
+    text-align: left;
+    color: white;
+}
+
+#about-web .pre-header {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+
+/* SERVICES */
+
+.services {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-color: var(--bg-color);
+}
+
+.services .right-side img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.services .left-side-cards {
+    margin-top: 30px;
+}
+
+.services .services-card-body h3 {
+    color: white;
+}
+
+.services .left-side-cards p {
+    font-size: 18px;
+}
+
+.services-card-body {
+    height: 250px;
+}
+
+#services-mobile .services-card {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#services-mobile .calculator-mobile {
+    padding-top: 70px;
+}
+
+.services .services-card-body {
+    padding: 30px 20px 30px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.services .services-card-number {
+    color: white;
+    font-size: 28px;
+    background-color: var(--bg-color);
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+#services-mobile {
+    display: none;
+}
+
+
+/* ABOUT SINGLEPAGE */
+
+#about_singlepage {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: var(--bg-color-d);
+}
+
+#about_singlepage p2 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+/* WCP */
+
+#WCP {
+    background-color: var(--bg-color-d);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#WCP h3 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#WCP .left-side {
+    border-right: 4px solid var(--primary-color);
+}
+
+#WCP .right-side {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#WCP button {
+    position: relative;
+    left: -10px;
+}
+
+#WCP p2 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+/* FACEBOOK */
+
+#facebook {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: var(--bg-color);
+}
+
+#facebook p {
+    margin-bottom: 0px;
+}
+
+#facebook .right-side img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+/* CONTACT */
+
+#contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--bg-color-d);
+}
+
+#contact .right-side {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#contact .right-side h3 {
+    color: white;
+    font-weight: 600;
+}
+
+#contact .right-side form {
+    padding-top: 30px;
+}
+
+#contact .right-side label {
+    color: white;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+#contact .right-side form input,
+#contact .right-side form textarea {
+    margin-bottom: 15px;
+    width: 80%;
+    padding: 5px;
+    background-color: #010b29;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.textArea {
+    height: 250px;
+}
+
+#contact .right-side form input:focus,
+#contact .right-side form textarea:focus {
+    outline: 0;
+    box-shadow: 0;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+}
+
+#contact .right-side form label {
+    margin-bottom: 5px;
+}
+
+#contact .right-side p2 {
+    font-size: 18px;
+    color: white;
+}
+
+#contact .right-side a {
+    color: var(--primary-color);
+    transition: 200ms ease;
+}
+
+#contact .right-side a:hover {
+    color: var(--light-blue-color);
+}
+
+
+/* MEDIA MAX WIDTH */
+
+
+/* ipad */
+
+@media(max-width: 1400px) {
+    .services-card-body {
+        height: 350px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .services-card-body {
+        height: 400px;
+    }
+    #contact .right-side .center {
+        transform: translateX(0);
+        left: 0;
+        position: static;
+    }
+}
+
+@media(max-width: 1024px) {
+    .services .services-card-body {
+        height: 400px;
+    }
+    .services img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1140px) {
+    #header-content .header-text {
+        width: 50%;
+    }
+    #technologies .content-box {
+        display: block;
+        text-align: center;
+    }
+    #technologies .content-box p2 {
+        display: block;
+    }
+    #technologies .content-box img {
+        width: 50px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    #contact form input,
+    #contact form textarea {
+        width: 100% !important;
+    }
+    #contact .right-side {
+        padding-right: 10px;
+    }
+}
+
+@media(max-width: 768px) {
+    #header-content .header-text {
+        padding-bottom: 30px;
+    }
+    #header-content img {
+        width: 100%;
+        position: relative;
+        top: -50px;
+    }
+    #header-content .header-text {
+        width: 60%;
+        padding-bottom: 70px;
+    }
+    #about-me img {
+        width: 100%;
+    }
+    #advantages-me {
+        display: none;
+    }
+    #advantages-me-slider {
+        display: block;
+    }
+    #advantages-web h3 {
+        margin-top: 50px;
+    }
+    #advantages-web .content-box {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .services .services-card-body {
+        height: 260px;
+    }
+    .center {
+        position: static;
+        left: 0;
+        transform: translateX(0);
+    }
+    #contact .right-side {
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+    #facebook .left-side img {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    #facebook .right-side {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #facebook {
+        padding-top: 30px;
+    }
+    #about-web .right-side h3 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 576px) {
+    #header-content .header-text {
+        width: 100%;
+    }
+    body .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #about-me img {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    #technologies {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #technologies .container {
+        position: relative;
+        top: -20px;
+    }
+    #technologies .content-box p2 {
+        display: none;
+    }
+    #technologies .content-box img {
+        width: 30px;
+    }
+    #technologies .content-box {
+        text-align: center;
+        display: block;
+    }
+    #advantages-me-slider {
+        padding-top: 0px;
+    }
+    #advantages-me-slider .card {
+        width: 90%;
+    }
+    #modal-changer {
+        bottom: 120px !important;
+        right: 0px !important;
+        transform: translateX(-15%);
+    }
+    #advantages-web .content-box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #services-mobile h2 {
+        text-align: center;
+    }
+    #services-mobile {
+        display: block;
+    }
+    #services-desktop {
+        display: none;
+    }
+    .services {
+        padding-top: 10px;
+    }
+    #WCP .left-side {
+        border-right: 0;
+    }
+    #WCP .left-side {
+        padding-bottom: 30px;
+    }
+    #WCP .right-side {
+        text-align: inherit;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #WCP button {
+        padding-left: 10px;
+    }
+    #contact .right-side {
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #facebook .right-side {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #facebook .left-side img {
+        width: 80%;
+    }
+    #about-web .left-side p2 {
+        margin-top: 20px;
+    }
+    #about-web .left-side {
+        padding-right: 10px;
+    }
+    #about-web .right-side {
+        padding-top: 10px;
+        border: 0;
+        padding-left: 10px;
+    }
+    #services-mobile {
+        padding-top: 30px;
+    }
+}
